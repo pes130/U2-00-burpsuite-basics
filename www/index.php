@@ -130,7 +130,7 @@ function nav_link($p, $label){
 </main>
 
 <footer class="text-center py-3">
-  <small>Mini Burp Lab — solo para prácticas en entorno controlado.@copy; IES Celia Viñas</small>
+  <small>Mini Burp Lab — solo para prácticas en entorno controlado.@IES Celia Viñas</small>
 </footer>
 </body>
 </html>
