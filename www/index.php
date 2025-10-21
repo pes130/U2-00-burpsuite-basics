@@ -29,26 +29,52 @@ function nav_link($p, $label){
 <?php if($p === 'home'): ?>
   <h1>Bienvenido</h1>
   <p>Pequeña web para enseñar intercepting proxies y XSS.</p>
-
+  <p>
+    - ¿Qué le dice un Bit al otro?<br>
+    - Nos vemos en el bus
+</p><p>
+    - ¿En qué se parecen Batman y Microsoft?<br>
+    - En que ambos luchan contra el pingüino
+</p><p>
+    - Solo hay 10 tipos de persona, las que saben binario y las que no.
+</p><p>
+    - ¿Cual es la mejor forma de acelerar un PC?<br>
+    - 9.8 m/s2
+</p><p>
+    - ¿Qué le dice una IP a otra?<br>
+    - ¿Qué tramas?
+</p><p>
+    - ¿Qué son 8 hobbits?<br>
+    - Un hobyte.
+</p><p>
+    - Te contaría un chiste sobre UDP, pero puede que no lo pilles.
+</p><p>
+    - Error, no hay teclado.<br>
+    - Pulse F1 para continuar.
+</p><p>
+    - El optimista: El vaso está medio completo.<br>
+    - El pesimista: El vaso está medio vacío.<br>
+    - El informático: El vaso es dos veces más grande de lo necesario.
+</p><p>
+    - ¿Por qué se ha enfriado el ordenador?<br>
+    - Porque se le ha olvidado cerrar ventanas.
+</p><p>
+    - ¿Qué tipo de médico es el que arregla páginas web?<br>
+    - El URLologo.
+</p><p>
 <?php elseif($p === 'about'): ?>
   <h1>About</h1>
-  <p>Esto es demo: contiene varias secciones para que el sitemap tenga "chicha".</p>
-
-  <h3>Sitemap (simulado)</h3>
-  <ul>
-    <li>/</li>
-    <li>/?p=about</li>
-    <li>/?p=docs</li>
-    <li>/?p=contact</li>
-    <!-- Note: no /hidden_flag.php ni /submit.php links -->
-  </ul>
+  <p>Bienvenido al laboratorio del módulo de <strong>Hacking Ético</strong> del <strong>IES Celia Viñas</strong>, Almería. Este espacio ha sido creado para que el alumnado del curso de especialización en ciberseguridad practique de forma segura técnicas de análisis de aplicaciones web, uso de proxies/interceptores, pruebas de inyección y detección de malas configuraciones.</p>
+<p>Todas las prácticas se realizan en entornos controlados y con fines didácticos: el objetivo es formar profesionales responsables capaces de identificar riesgos y proponer medidas de mitigación conforme a la ley y a las buenas prácticas del sector.</p>
 
 <?php elseif($p === 'docs'): ?>
   <h1>Docs</h1>
-  <p>Algunas entradas de documentación de ejemplo para dar contenido al sitemap.</p>
+  <p>Explore alguno de los documentos claves de este sitio. </p>
   <article>
     <h4>Guía rápida</h4>
-    <p>Este es contenido estático que facilita que el spider de Burp tenga páginas que indexar.</p>
+    <p>The path of the righteous man is beset on all sides by the iniquities of the selfish and the tyranny of evil men. Blessed is he who, in the name of charity and good will, shepherds the weak through the valley of darkness, for he is truly his brother's keeper and the finder of lost children. And I will strike down upon thee with great vengeance and furious anger those who would attempt to poison and destroy My brothers. And you will know My name is the Lord when I lay My vengeance upon thee.</p>
+
+    <p>Your bones don't break, mine do. That's clear. Your cells react to bacteria and viruses differently than mine. You don't get sick, I do. That's also clear. But for some reason, you and I react the exact same way to water. We swallow it too fast, we choke. We get some in our lungs, we drown. However unreal it may seem, we are connected, you and I. We're on the same curve, just on opposite ends.</p>
   </article>
 
 <?php elseif($p === 'contact'): ?>
@@ -83,7 +109,7 @@ function nav_link($p, $label){
 
 <?php elseif($p === 'secret'): ?>
   <h1>Secret area</h1>
-  <p>Esta sección hace una petición oculta (background) a un endpoint no linked que devuelve una flag — no se muestra en la UI.</p>
+  <p>Esta sección hace una petición oculta en background a un endpoint.</p>
 
   <p>Trucos: mira el sitemap de Burp o las peticiones XHR para ver la llamada a <code>/hidden_flag.php</code>.</p>
 
@@ -104,7 +130,7 @@ function nav_link($p, $label){
 </main>
 
 <footer class="text-center py-3">
-  <small>Mini Burp Lab — solo para prácticas en entorno controlado</small>
+  <small>Mini Burp Lab — solo para prácticas en entorno controlado.@copy; IES Celia Viñas</small>
 </footer>
 </body>
 </html>
